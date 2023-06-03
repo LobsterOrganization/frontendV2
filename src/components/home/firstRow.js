@@ -14,8 +14,13 @@ import {
 } from "chart.js";
 import TweetsProportionBarGraph from "../tweetsProportionBarGraph/tweetsProportionBarGraph";
 import Top10LikedTweets from "../top10LikedTweets/top10LikedTweets";
+import Top10LikedTweetsTener from "../top10LikedTweetsTener/top10LikedTweetsTener";
 import Top10ControvertialTweets from "../top10ControvertialTweets/top10ControvertialTweets";
 import WordCloud from "../word-cloud/word-cloud";
+import WordCloudAvril from "../word-cloudAvril/word-cloud";
+import WordCloudMars from "../word-cloudMars/word-cloud";
+import WordCloudFevrier from "../word-cloudFevrier/word-cloud";
+import WordCloudJanvier from "../word-cloudJanvier/word-cloud";
 import SentimentPieChart from "../sentimentPieChart/sentimentPieChart";
 import ThemePieCharts from "../themesPieCharts/themePieCharts";
 ChartJS.register(
@@ -49,10 +54,20 @@ const Content = () => {
           <SentimentPieChart />
         </div>
         <div className="row mt-5">
+          <ThemePieCharts />
+        </div>
+        <center>Ci-dessous, vous trouverez l'ensemble des tendances tout au long de l'année 2023 et mois par mois </center>
+        <div className="row mt-5">
           <WordCloud />
         </div>
         <div className="row mt-5">
-          <ThemePieCharts />
+          <WordCloudAvril />
+        </div>
+        <div className="row mt-5">
+          <WordCloudMars />
+        </div>
+        <div className="row mt-5">
+          <WordCloudFevrier />
         </div>
       </div>
     </div>

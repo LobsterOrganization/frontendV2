@@ -6,7 +6,7 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-lg navbar-light white-light">
         <div className="container-fluid">
           <h1>Bonjour M. TANG</h1>
-
+          
           <button
             className="navbar-toggler"
             type="button"
@@ -26,7 +26,7 @@ const NavBar = () => {
                   <div>
                     <i className="fas fa-bell fa-lg mb-1"></i>
                     <span className="badge rounded-pill badge-notification bg-danger">
-                      11
+                      0
                     </span>
                   </div>
                 </a>
@@ -49,9 +49,14 @@ const NavBar = () => {
               />
             </div>
           </div>
+          
         </div>
       </nav>
+      Bienvenue dans notre dashboard interactif où vous pourrez avoir une vue d'ensemble sur l'écologie, la transition énérgétique à travers
+          Twitter. En cliquant sur le menu autre dashboard, vous aurez la possibilité de voir un autre storytelling. 
+          Nous vous souhaitons une agréable visite.
     </div>
+    
   );
 };
 

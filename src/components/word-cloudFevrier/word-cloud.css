@@ -1,0 +1,17 @@
+.word-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  
+  .word-cloud span {
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .word-cloud span.word-rotate {
+    transform: rotate(-45deg);
+  }
