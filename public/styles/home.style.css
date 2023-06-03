@@ -1,0 +1,236 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+.media-body {
+  color: rgb(102, 87, 221);
+  margin-left: 15px;
+}
+
+.textNav {
+  margin-right: 15px;
+}
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+#content {
+  border-radius: 10px;
+}
+
+/* NavBar */
+
+#navbarHome {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.nav-item {
+  padding-right: 10px;
+}
+
+#navbarHome.active {
+  width: 100%;
+  margin: 0;
+}
+
+#navbarHome.active {
+  width: 100%;
+  margin: 0;
+}
+
+.navbarHome-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* First content */
+
+#first-content {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+#first-content.active {
+  width: 100%;
+  margin: 0;
+}
+
+#first-content.active {
+  width: 100%;
+  margin: 0;
+}
+
+.page-content-first {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+#first-row-content {
+  border: 0.5px solid #aaa;
+  border-radius: 10px;
+  padding-top: 40px;
+  height: 500px;
+}
+
+#row-first-content1 {
+  background-color: rgb(253, 241, 231);
+  border-radius: 10px;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+#row-first-content2 {
+  background-color: rgb(236, 234, 252);
+  border-radius: 10px;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 5.5%;
+}
+
+#row-first-content3 {
+  background-color: rgb(232, 246, 254);
+  border-radius: 10px;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 30%;
+}
+
+.span4 h3 a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.smallText {
+  color: grey;
+  font-size: 14px;
+}
+
+/* Sigma */
+.containerSigma {
+  border-radius: 10px;
+}
+
+/* Notification */
+
+#row-notification {
+  background-color: rgb(249, 249, 249);
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-right: 0%;
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 15%;
+}
+
+#row-notification h3 a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.smallTextNotification {
+  color: grey;
+  font-size: 8px;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.footNotification {
+  margin-top: 30px;
+  text-align: end;
+  color: rgb(102, 87, 221);
+}
+
+.top5TweetsContainer {
+  padding: 20px;
+  width: 100%;
+}
+.top5TweetsProgressBar {
+  width: 100%;
+  display: flex;
+}
+.progressBarContainer {
+  width: 100%;
+}
+
+.truncateContextText {
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top5LikedTweetsColumn {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.datePicker {
+  width: fit-content;
+  align-self: end;
+}
+.tweetsBarGraphContainer {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  
+}
+
+.tweetsBarGraphDatePicker {
+  align-self: end;
+}
+
+.sentimentPieChart{
+  justify-content: center;
+}
