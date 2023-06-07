@@ -64,7 +64,7 @@ const SentimentPieChart = () => {
           value={sentimentPieChartDateValue}
         />
       </div>
-      <div className="text-center">Proportion des sentiments</div>
+      <h1><b><center>Proportion des sentiments</center></b></h1>
       <div style={{ width: "35%" }}>
         {" "}
         {sentimentPieChartData?.length !== 0 && sentimentPieChartData ? (

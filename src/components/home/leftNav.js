@@ -12,7 +12,7 @@ const LeftNav = () => {
             className="mr-3 rounded-circle shadow-sm"
           />
           <div className="media-body">
-            <h4 className="m-0">Lobster</h4>
+            <h4 className="m-0">Neo Lobster</h4>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ const LeftNav = () => {
         <li className="nav-item">
           <a href="http://localhost:3000/dashboard" className="nav-link text-dark font-italic">
             <i className="fa fa-th-large mr-3 text-secondary fa-fw textNav"></i>
-            Autre dashboard
+            OG Lobster dashboard
           </a>
         </li>
 

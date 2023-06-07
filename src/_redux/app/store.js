@@ -5,6 +5,7 @@ import tweetsReducer from "../reducers/tweetsReducer";
 import occurenceReducer from "../reducers/occurenceReducer";
 import sentimentReducer from "../reducers/sentimentReducer";
 import polariteReducer from "../reducers/polariteReducer";
+import occurenceReducerAvril from "../reducers/occurenceReducerAvril";
 const store = configureStore({
   reducer: {
     nodes: nodesReducer,
@@ -13,6 +14,7 @@ const store = configureStore({
     occurence: occurenceReducer,
     sentiments: sentimentReducer,
     polarite: polariteReducer,
+    occurenceAvril: occurenceReducerAvril,
   },
 });
 

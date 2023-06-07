@@ -58,7 +58,7 @@ const Top10ControvertialTweets = () => {
       />
       <div className="span4" id="row-first-content2">
         <h3 className="text-center">
-          <a href="#">Top 5 Controversial Tweets</a>
+          <a href="#">Les 5 Tweets les plus controversés</a>
         </h3>
         <div className="top5TweetsContainer">
           {top5ControvertialTweetsData?.length !== 0 &&
@@ -66,7 +66,7 @@ const Top10ControvertialTweets = () => {
             top5ControvertialTweetsData.map((element, index) => {
               return (
                 <div key={index}>
-                  <div className="text-right smallText truncateContextText">
+                  <div className="text-right smallText">
                     {element.content}
                   </div>
                   <div className="text-right smallText">{element.date}</div>

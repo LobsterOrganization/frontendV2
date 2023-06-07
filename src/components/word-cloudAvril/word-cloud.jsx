@@ -1,7 +1,7 @@
 import "./word-cloud.css";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getTop10UsedWords } from "../../actions/occurenceAvril.actions";
+import { getTop10UsedWordsAvril } from "../../actions/occurenceAvril.actions";
 import ReactWordcloud from "react-wordcloud";
 
 const options = {
@@ -21,26 +21,26 @@ const options = {
 };
 
 const WordCloudAvril = () => {
-  const { top10UsedWords } = useSelector((state) => state.occurence);
-  const [top10UsedWordList, setTop10UsedWordList] = useState([]);
+  const { top10UsedWordsAvril } = useSelector((state) => state.occurenceAvril);
+  const [top10UsedWordListAvril, setTop10UsedWordListAvril] = useState([]);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getTop10UsedWords());
+    dispatch(getTop10UsedWordsAvril());
   }, [dispatch]);
 
   useEffect(() => {
-    if (top10UsedWords !== undefined) {
-      fillTop10UsedWordList();
+    if (top10UsedWordsAvril !== undefined) {
+      fillTop10UsedWordListAvril();
     }
-  }, [top10UsedWords]);
+  }, [top10UsedWordsAvril]);
 
-  const fillTop10UsedWordList = () => {
-    let wordsList = [];
-    wordsList = top10UsedWords.map((element) => ({
-      text: element.mots,
-      value: element.freq,
+  const fillTop10UsedWordListAvril = () => {
+    let wordsListAvril = [];
+    wordsListAvril = top10UsedWordsAvril.map((element) => ({
+      text: element.Mots,
+      value: element.Freq,
     }));
-    setTop10UsedWordList(wordsList);
+    setTop10UsedWordListAvril(wordsListAvril);
   };
   return (
     <>
@@ -48,8 +48,8 @@ const WordCloudAvril = () => {
         <h3 className="text-center">Les 10 tendances recurrentes d'avril 2023</h3>
       </div>
       <div>
-        {top10UsedWords?.length !== 0 && top10UsedWords ? (
-          <ReactWordcloud options={options} words={top10UsedWordList} />
+        {top10UsedWordsAvril?.length !== 0 && top10UsedWordsAvril ? (
+          <ReactWordcloud options={options} words={top10UsedWordListAvril} />
         ) : (
           <div className="text-center smallText">No Data Found</div>
           )}

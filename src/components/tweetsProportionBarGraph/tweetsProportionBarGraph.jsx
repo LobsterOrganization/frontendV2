@@ -86,14 +86,6 @@ const TweetsProportionBarGraph = () => {
   return (
     <>
       <div className="col-md-12 tweetsBarGraphContainer" id="first-row-content">
-        <div className="tweetsBarGraphDatePicker">
-          <DatePicker
-            className={"datePicker"}
-            format="dd-MM-yyyy"
-            onChange={handleTweetBarChartDateChange}
-            value={tweetBarChartDateValue}
-          />
-        </div>
         <div>
           <h4 className="text-center">Proportion des tweets</h4>
         </div>

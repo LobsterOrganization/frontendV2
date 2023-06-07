@@ -45,7 +45,7 @@ const WordCloud = () => {
   return (
     <>
       <div>
-        <h3 className="text-center">Les 10 tendances recurrentes de l'année 2023</h3>
+        <h3 className="text-center">Les 10 influenceurs écologie/energétique de Twitter</h3>
       </div>
       <div>
         {top10UsedWords?.length !== 0 && top10UsedWords ? (

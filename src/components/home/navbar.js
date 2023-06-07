@@ -52,8 +52,10 @@ const NavBar = () => {
           
         </div>
       </nav>
-      Bienvenue dans notre dashboard interactif où vous pourrez avoir une vue d'ensemble sur l'écologie, la transition énérgétique à travers
-          Twitter. En cliquant sur le menu autre dashboard, vous aurez la possibilité de voir un autre storytelling. 
+      Bienvenue dans le Neo dashboard interactif où vous pourrez avoir une vue d'ensemble sur la transition écologique & la transition énérgétique à travers
+          Twitter.  Vous pourrez avoir en détail les tweets les plus controversés, les tweets les plus aimés de la journé, la proportion de tweets créés par mois en rapport
+          avec la transition énergéque/transition écologique et même jour par jour. Puis les 10 personnes les plus influentes dans cette thèmatique.
+          En cliquant sur le menu autre dashboard, vous aurez la possibilité de voir un autre storytelling.
           Nous vous souhaitons une agréable visite.
     </div>
     

@@ -45,7 +45,7 @@ const WordCloudFevrier = () => {
   return (
     <>
       <div>
-        <h3 className="text-center">Les 10 tendances recurrentes d'Fevrier 2023</h3>
+        <h3 className="text-center">Les 10 tendances recurrentes de Fevrier 2023</h3>
       </div>
       <div>
         {top10UsedWords?.length !== 0 && top10UsedWords ? (

@@ -54,14 +54,14 @@ const Top10LikedTweets = () => {
       />
       <div className="span4" id="row-first-content1">
         <h3 className="text-center">
-          <a href="#">Top 5 Liked Tweets</a>
+          <a href="#">Les 5 tweets les plus appréciés</a>
         </h3>
         <div className="top5TweetsContainer">
           {top5LikedTweetsData?.length !== 0 && top5LikedTweetsData ? (
             top5LikedTweetsData.map((element, index) => {
               return (
                 <div key={index}>
-                  <div className="text-right smallText truncateContextText">
+                  <div className="text-right smallText ">
                     {element.content}
                   </div>
                   <div className="text-right smallText">{element.date}</div>

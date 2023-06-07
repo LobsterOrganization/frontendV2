@@ -1,25 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getTop10UsedWords } from "../../actions/occurenceAvril.actions";
+import { getTop10UsedWordsAvril } from "../../actions/occurenceAvril.actions";
 const initialState = {
   loading: false,
   status: false,
-  top10UsedWords: [],
+  top10UsedWordsAvril: [],
 };
-export const occurenceSlice = createSlice({
-  name: "occurence",
+export const occurenceAvrilSlice = createSlice({
+  name: "occurenceAvril",
   initialState,
   reducers: {},
   extraReducers: {
-    [getTop10UsedWords.pending.type]: (state) => {
+    [getTop10UsedWordsAvril.pending.type]: (state) => {
       state.loading = true;
     },
-    [getTop10UsedWords.fulfilled.type]: (state, { payload }) => {
-      state.top10UsedWords = payload;
+    [getTop10UsedWordsAvril.fulfilled.type]: (state, { payload }) => {
+      state.top10UsedWordsAvril = payload;
     },
-    [getTop10UsedWords.rejected.type]: (state) => {
+    [getTop10UsedWordsAvril.rejected.type]: (state) => {
       state.loading = false;
     },
   },
 });
 
-export default occurenceSlice.reducer;
+export default occurenceAvrilSlice.reducer;
