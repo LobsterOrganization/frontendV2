@@ -44,9 +44,9 @@ const ThemePieCharts = () => {
   }, [groupedEnergeticalThemes]);
 
   const generateDarkClearColor = () => {
-    var red = Math.floor(Math.random() * 129);
-    var green = Math.floor(Math.random() * 129);
-    var blue = Math.floor(Math.random() * 129);
+    var red = Math.floor(Math.random() * (256 - 128) + 128);
+    var green = Math.floor(Math.random() * (256 - 128) + 128);
+    var blue = Math.floor(Math.random() * (256 - 128) + 128);
     var alpha = Math.random() * (1.0 - 0.3) + 0.3;
 
     return `rgba(${red}, ${green}, ${blue}, ${alpha})`;

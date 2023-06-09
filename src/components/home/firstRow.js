@@ -22,7 +22,6 @@ import WordCloudFevrier from "../word-cloudFevrier/word-cloud";
 import WordCloudJanvier from "../word-cloudJanvier/word-cloud";
 import SentimentPieChart from "../sentimentPieChart/sentimentPieChart";
 import ThemePieCharts from "../themesPieCharts/themePieCharts";
-import InfluenceurCloud from "../influenceur/influenceurCloud";
 
 ChartJS.register(
   RadialLinearScale,
